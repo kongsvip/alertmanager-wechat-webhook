@@ -30,7 +30,7 @@ def send_alert(data):
         return
     url = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=%s' % token
     send_data = {
-        "chatid": "CHATID",
+        "chatid": "1",
         "msgtype": "text",
         "text": {
             "content": data
