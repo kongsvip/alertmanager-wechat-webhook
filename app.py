@@ -28,7 +28,7 @@ def send_alert(data):
     if not token:
         print('you must set ROBOT_TOKEN env')
         return
-    url = 'https://oapi.dingtalk.com/robot/send?access_token=%s' % token
+    url = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=%s' % token
     send_data = {
         "msgtype": "text",
         "text": {
